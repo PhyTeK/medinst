@@ -4,7 +4,15 @@ Install Visual Studio
 3. Unzip
 4. Open the application
 
-Install Git inside VS
+Create an account on GitHub
+https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account
+
+Install Git as an extension in VS
 1. Select Extension (Left margin)
 2. Search GIT
 3. Install The Git Extension Pack
+
+In a terminal window
+Start to pull your new repository at GitHub
+git remote add origin https://github.com/PhyTeK/medinst.git
+git pull origin main --allow-unrelated-histories
