@@ -1,0 +1,187 @@
+Exercices
+Git and github
+
+1. How do you set your Git username and email for all your local repositories?
+   git config –-global user.name="Philippe"
+   git config –-global email.name="Philippe.Martinet@elevera.org"
+
+2. How do you initialize a git repo inside a local map in your computer?
+   git init .
+
+3. In Visual Studio Code (VSC) what mean U, M and A on the right side of each files?
+   U = Untracked
+   M = Modified
+   A = Indexed by git
+   
+4. What are you doing when you make a commit?
+   To do a commit use: git commit -m "First commit"
+   After the commit all the files which were on stage (git add .) are tracked by the version control system Git.
+
+5. Explain what you need to do to push local files to a GitHub repo.
+   First, you have to open an account at Github if you don't have already one.
+   Second, you need create an alias e.g orgin to the url of the GitHub repository.
+   For that write inside a terminal:
+
+   git remote add origin https://github.com/.../reponame.git
+
+   Third, push your local files which are in master branch using:
+
+   git push -u origin master
+
+6. Explain why sometimes one need to create new branches in Git.
+   A branch correspond in general to a new idea undependently from the main idea/branche.
+
+7. How to check the state of a repo?
+   git status
+   Show in which branch the HEAD is and the status of the files inside the repo.
+
+8. How do you check the version of your git application?
+    git --version
+    --version is an option of git that show the version of the application.
+
+For more exercices:
+https://www.w3schools.com/git/git_exercises.asp?remote=github
+
+HTML
+====
+1. What is the first declaration in an HTML5 document?
+   <!DOCTYPE html>
+2. Give the main structure of an HTML document.
+   <html>
+   <head>
+     <meta>
+     <link>
+     <title></title>
+   </head>   
+   <body>
+ 
+   </body>
+   </html>
+3. Why do we need metadata in head element?
+   Metadata are extra information for the browser and Google spiders about the web document.
+   For example you can have <meta charset="UTF-8"> to defined all charaters as UTF8
+
+4. What is an attribute?
+   It's an extra information for the element for example:
+   <img src="img/myimage.jpg"> Here, the atribute src points to the location of the image myimage.jpg
+
+5. Which attribute you used to specify the default language and in which element it should be?
+   The attribute name is lang and it is placed in the html element such as:
+
+   <html lang="sv"> for swedish document or <html lang="en"> for english documents
+
+6. What is the difference between head and header elements?
+   The head is located before the body and the header associated with a footer are located inside the body.
+
+7. What represents W3C?
+   World Wide Web Consortium
+
+8. What is a validator? Give the url of w3c official validator.
+   A validator validate an HTML document by checking and compare each element and attribute with the standard HTML5 define by W3C.
+
+9. What is main objective of an HTML code?
+    An html5 document is structured and focused on the content not on the style (CSS)
+
+10. How to write a main- and sub-rubric in a webpage?
+    A main rubric (one per page) uses the heading h1. For example:
+    <h1>Introduction</h1>
+
+    A subrubric uses the heading h2, or h3, h4 etc for example:
+    <h2>Subrubric</h2>
+
+11. How to add an hyperlink to medieinstitutet site?
+    I'm studing at the <a href="https://medieinstitutet.se/">Medie Institutet</a> in Stockholm
+
+12. Create a simple menu with links to 2 rubrics of a webpage.
+    Let's two headings h1 with following ids "intro" and "chap1"
+
+    <nav>
+      <a href="#intro">Introduction</a>
+      <br>
+      <a href="#chap1">Chapter 1</a>
+    </nav>
+
+with in the body element:
+
+   <h1 id="intro">Introduction</h1>
+   <h1 id="chap1">Chapter 1</h1>
+    
+13. How to define the character set to be UTF-8?
+     <meta charset="UTF-8"> inside the head element
+
+14. How to insert a paragraph?
+    <p>Lorem ipsum ......</p>
+
+15. Does all element in HTML5 have an end tag? If not give some examples.
+   No. For example:
+   <hr>
+   <br>
+   <meta>
+   <link>
+   <img>
+
+16. Give an two examples of HTML5 elements that do not have an end tag.
+   See question above!
+
+17. Create an ordered list with 3 items.
+       <ol>
+          <li>First Item</li>
+          <li>Second Item</li>
+          <li>Third Item</li>
+       </ol>
+18. Create an unordered list with 3 items.
+       <ul>
+          <li>First Item</li>
+          <li>Second Item</li>
+          <li>Third Item</li>
+       </ul>
+19. Create a definition list with 2 items.
+    <dl>
+     <dt>Name</dt>
+     <dd>Information about Name</dd>
+     <dt>Second Name</dt>
+     <dd>Informations about the second name</dd>
+    </dl>
+
+20. Create a download link to a local file.
+   We use the attribute download in an anchor element a.
+
+    <a href="some url" download>An image</a>
+
+21. What means semantic?
+    Semantic mean meaning. An HTML5 semantic element is an element which has a meaning such as article, section or header and footer.
+
+22. What is the difference between the elements article and section?
+    An article element is selected when its content is very specific for example about covid19
+    A section has a more general content.
+    <section id="sec1">   </section>
+
+23. What are entities? give 2 examples
+    An entities always start with the & character and end with a ;
+    It replace characters that reserved such < and > or other charaters which not standard on a keyboard such copyright character.
+
+    &lt; <
+    &gt; >
+    &copy;  @
+    &nbsp;  non breaking space between two words.
+    
+24. How to set bold and italic text?
+    For bold text you can use the <b> element or <strong> and for italic it's <i>.
+
+25. What is the point to have a title element inside the head element?
+    The element <title> in the head appears only in the tab of the browser.
+
+26. How to insert a comment in HTML?
+   <!-- The comment itself -->
+
+27. What is purpose of the main element?
+    It starts and end the main content of document. Only one main per document.
+
+28. Add 10 empty lines with VSC.
+    br*10  and return create:
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+
+
+
